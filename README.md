@@ -28,26 +28,26 @@ nano aws-config.json
 
 # Start 10 instances evenly distributed across the regions.
 # All instances are tagged according to 'instanceTags' field in aws-config.json.
-node aws.js start 10
+./aws.js start 10
 
 # Watch status of our instances (similar to 'top' command).
 # Launch a separate terminal for this.
-node aws.js status
+./aws.js status
 
 # Set the target IP of server to test.
-node aws.js set host <ip>
+./aws.js set host <ip>
 
 # Set the amount of connections to keep with the target from EACH instance.
-node aws.js set n 1000
+./aws.js set n 1000
 
 # Maximum recommended value = 25000 for EC2 Micro instance.
-node aws.js set n 25000
+./aws.js set n 25000
 
 # Restart node process in all instances (recommended to do between tests).
-node aws.js set restart 1
+./aws.js set restart 1
 
 # After all tests, terminate all instances that we started (all existing instances are not touched).
-node aws.js stop all
+./aws.js stop all
 ```
 
 ## How does it work?
