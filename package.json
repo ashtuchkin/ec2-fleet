@@ -1,0 +1,11 @@
+{
+    "name": "ec2-fleet",
+    "version": "0.1.0",
+    "description": "A distributed load test framework using Amazon EC2 instances",
+    "author": "Alexander Shtuchkin <ashtuchkin@gmail.com>",
+    "dependencies": {
+        "aws2js": "",
+        "commander": "",
+        "async": ""
+    }
+}

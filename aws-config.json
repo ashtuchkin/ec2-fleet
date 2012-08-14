@@ -1,0 +1,10 @@
+{
+    "accessKeyId": "<your 'Access Key Id' (see https://portal.aws.amazon.com/gp/aws/securityCredentials)>",
+    "accessKeySecret": "<your 'Secret Access Key'>",
+    "regions": ["eu-west-1", "us-east-1", "us-west-1"],
+    "userDataFile": "cloud-config.sh",
+    "instanceTags": { 
+        "temporaryInstance": "yes"
+    },
+    "controlPort": 8889
+}
