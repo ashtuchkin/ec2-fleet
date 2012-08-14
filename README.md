@@ -10,7 +10,8 @@ using 40 EC2 Micro instances.
 
 ## Usage
 ```bash
-# First, install Node.js. Use http://nodejs.org
+# First, install Node.js (see http://nodejs.org)
+# The installation is tested on Ubuntu 12.04.
 
 git clone git://github.com/ashtuchkin/ec2-fleet.git
 cd ec2-fleet
