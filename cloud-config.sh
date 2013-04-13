@@ -18,7 +18,7 @@
 # Install latest stable node.js
 add-apt-repository ppa:chris-lea/node.js
 apt-get update
-apt-get install -y nodejs npm
+apt-get install -y nodejs
 
 # Write our client code.
 sudo -u ubuntu tee -a /home/ubuntu/client.js > /dev/null <<"EOF"
@@ -41,6 +41,6 @@ EOF
 
 # The upstart job will launch our client and keep it alive.
 # Output is written to /var/log/upstart/client.log
-mkdir /var/log/upstart
+mkdir -p /var/log/upstart
 initctl reload-configuration
 start client
