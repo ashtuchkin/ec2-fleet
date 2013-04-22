@@ -5,6 +5,7 @@ var config = {
     concurrency: 100,
     host: '127.0.0.1',
     port: 8888,
+    path: '/',
     controlPort: 8889,
 };
 
@@ -21,7 +22,7 @@ var clients = {};
 function makeRequest() {
     stats.inproc++;
     var id = Math.random().toString(36).slice(2);
-    var req = http.request({host:config.host, port:config.port, agent:false});
+    var req = http.request({host:config.host, port:config.port, path:config.path, agent:false});
     req.setNoDelay();
 
     req.on('response', function(res) {
