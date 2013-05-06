@@ -236,7 +236,7 @@ function printStatus() {
                 //if (u.updateReq) {u.updateReq.abort(); delete u.updateReq;}
                 if (inst.dnsName != "") {
                     u.lastReqTime = Date.now();
-                    var req = http.request({host: inst.dnsName, port: 8889});
+                    var req = http.request({host: inst.dnsName, port: config.controlPort});
                     req.setHeader("Connection", "keep-alive");
                     u.updateReq = req;
                     req.on('response', function(res) {
